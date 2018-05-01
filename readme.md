@@ -22,5 +22,17 @@ and sending an "a" will put it into autonomous mode.
 
 ## Autonomous Mode
 
-We mounted 4 ultrasonic sensors on the RC car, 2 on the front and one on either side. The car will stop if there is an obstacle in front of it, and then read the distance sensed by all 4 sensors. If it is too close
-to the obstacle in front of it, it will back up. If not, it will check the distance on both sides and turn the direction in which there is more room (i.e. in which the closest obstacle is farthest away).
+### Introduction
+
+It is based on the signal(distance) from the ultrasonic sensors(hc-sr04).We mounted 4 ultrasonic sensors on the RC car, 2 on the front and one on either side. 
+
+### Distance Detection
+
+We send a trigger signal to the sensors periodically(0.1s), then the sensor will send out ultra sonic wave and send echo signal to high level until it get the bounced back wave.
+Then we can get the distance according to the time of echo signal holding high.
+```
+distance = (time / sound speed) / 2
+```
+
+### Autonomous Control
+The car will stop if there is an obstacle in front of it, and then read the distance sensed by all 4 sensors. If it is too close to the obstacle in front of it, it will back up. If not, it will check the distance on both sides and turn the direction in which there is more room (i.e. in which the closest obstacle is farthest away).
