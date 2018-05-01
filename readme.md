@@ -1,5 +1,5 @@
 # FPGAng's Controlled and Autonomous Rover
-# Whole Diagram
+## Whole Diagram
 ![image](https://github.com/BU-EC551/FPGAng/blob/master/Videos/WholeDia.PNG)
 ## Hardware
 
