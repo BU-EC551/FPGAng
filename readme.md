@@ -12,7 +12,6 @@
 5. [L293D Motor Driver](https://www.mouser.com/ProductDetail/STMicroelectronics/L293D/?qs=gr8Zi5OG3MgMJ1ICDzLQbg%3D%3D&gclid=CjwKCAjwoKDXBRAAEiwA4xnqv5YjH1lbMSurImEGttWaS185mPXIEui-msaRmnfbPLBNqcMmYTvw_xoCT8UQAvD_BwE)
    The L293D motor driver is a chip containing 4 tri-states, with 2 enable pins that enable each pair of tri-states. It can drive up to 600 mA from each tri-state output.
 6. RC Car
-7. 
 
 ## Controlled Mode
 
