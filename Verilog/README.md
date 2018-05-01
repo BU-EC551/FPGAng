@@ -9,10 +9,11 @@ module. Essentially, the serial data from bluetooth is converted into byte packe
 was 100 mHz on the board divided by 9600 so we ended up with 10400 clks_per_bit.
 
 ### 2. Parser
-The parser module reads 4 bytes at a time, looking for a start byte in hex for "!", then a button press "B", which specific button "1,2,3..", and lastly 1 or 0 for a press or release. We then perform a cyclic redundancy check and pass a ready signal to the controller. Before that, in this module we also control which mode the rover is in. Either autonomous or control mode, by passing it a "aa" for autonomous or "cc" for controlled. Based on 
+The parser module reads 4 bytes at a time, looking for a start byte in hex for "!", then a button press "B", which specific button "1,2,3..", and lastly 1 or 0 for a press or release. We then perform a cyclic redundancy check and pass a ready signal to the controller. Before that, in this module we also control which mode the rover is in. We can switch between these modes, autonomous or control mode, by passing it a "aa" for autonomous or "cc" for controlled. Based on the button pressed we send a certain 3-bit state to the controller.
 
 ### 3. Controller
-The parser module reads 4 bytes at a time, looking for a start byte in hex for "!", then a button press "B", which specific button "1,2,3..", and lastly 1 or 0 for a press or release. We then perform a cyclic redundancy check and pass a ready signal to the controller. Before that, in this module we also control which mode the rover is in. Either autonomous or control mode, by passing it a "aa" for autonomous or "cc" for controlled. Based on 
+The controller handles all the different directional buttons on the app and essentially drives the car. The different states run through the directions, the speed, and the mode of the car. The mode is represented in the 2 LSB, the 2 MSB represent the different speeds we cycles through, the 4 btis in the middle control the direction.
+
 
 ## Autonomous Mode Code [Jason and Gan]
 ### 1. Top_sensor.v
