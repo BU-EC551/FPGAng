@@ -1,7 +1,9 @@
 # FPGAng's Controlled and Autonomous Rover
-## Whole Diagram
+## System Diagram
 ![image](https://github.com/BU-EC551/FPGAng/blob/master/Videos/WholeDia.PNG)
 ## Hardware
+
+![image](https://github.com/BU-EC551/FPGAng/blob/master/Videos/final_product.jpg)
 
 1. [Microzed](http://www.zedboard.org/product/microzed)
    The Microzed holds a Zynq 7010 SoC. This project only uses the FPGA mesh on the chip,
