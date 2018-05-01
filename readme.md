@@ -37,5 +37,5 @@ distance = (time * sound speed) / 2
 ```
 ![image](https://github.com/BU-EC551/FPGAng/blob/master/Videos/sensor.PNG)
 ### Autonomous Control
-The car will stop if there is an obstacle in front of it, and then read the distance sensed by all 4 sensors. If it is too close to the obstacle in front of it, it will back up. If not, it will check the distance on both sides and turn the direction in which there is more room (i.e. in which the closest obstacle is farthest away).
+The car will stop if there is an obstacle in front of it, and then read the distance sensed by all 4 sensors. If it is too close to the obstacle in front of it, it will back up. If not, it will check the distance on both sides and turn the direction in which there is more room (i.e. in which the closest obstacle is farthest away). And if it's in a dead end, it can back up and check if it still in the dead end.
 ![image](https://github.com/BU-EC551/FPGAng/blob/master/Videos/AutoASm.PNG)
