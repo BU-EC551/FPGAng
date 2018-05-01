@@ -20,7 +20,10 @@
 
    The L293D motor driver is a chip containing 4 tri-states, with 2 enable pins that enable each pair of tri-states. It can drive up to 600 mA from each tri-state output.
    
-6. RC Car
+6. RC Car Base
+
+   Including two DC motors, one for forward backward and one for steering.
+   
 7. micro SD card
 
    This project use micro SD card to load boot image to boot the board.
